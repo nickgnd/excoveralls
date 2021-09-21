@@ -1,3 +1,13 @@
+0.14.2
+------
+#### Enhancements
+- Minimum support for lcov - experimental (#261, #264).
+
+0.14.1
+------
+#### Changes
+- Fix HTML tag typo (#259).
+
 0.14.0
 ------
 #### Enhancements
