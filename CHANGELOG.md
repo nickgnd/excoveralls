@@ -1,3 +1,15 @@
+0.14.4
+------
+#### Changes
+- Fix for application base path identification logic.
+    - Use `File.cwd!/0` for fetching base path tests (#271).
+- Support Elixir 1.13 (#267).
+
+0.14.3
+------
+#### Enhancements
+- Add :base_path config option to specify application root path (#269).
+
 0.14.2
 ------
 #### Enhancements
