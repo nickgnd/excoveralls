@@ -48,6 +48,8 @@ defmodule ExCoveralls.Poster do
         {:ok, "API endpoint `#{endpoint}` is not available and return internal server error! Ignoring upload"}
       {:ok, 405 = _status_code, _, _client} ->
         {:ok, "API endpoint `#{endpoint}` is not available due to maintenance! Ignoring upload"}
+      {:ok, 422 = _status_code, _, _client} ->
+        {:ok, "API endpoint `#{endpoint}` is not available due to missing repository! Ignoring upload"}
       {:ok, status_code, _, client} ->
         {:ok, body} = :hackney.body(client)
 
